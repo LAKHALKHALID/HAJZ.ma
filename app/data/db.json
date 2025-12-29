@@ -267,6 +267,25 @@
       "price": 220,
       "description": "Direct night flight from Casablanca to Istanbul Airport with meals included."
     }
+  ],
+  "users":[
+    {
+      "id":"1",
+      "firstName":"khalid",
+      "lastName":"lakhal",
+      "email":"khalid@gmail.com",
+      "password":"123",
+      "rol":"admin"
+    },
+    {
+      "id":"2",
+      "firstName":"jamal",
+      "lastName":"lakhal",
+      "email":"jamal@gmail.com",
+      "password":"123",
+      "rol":"user"
+    }
+
   ]
 
 

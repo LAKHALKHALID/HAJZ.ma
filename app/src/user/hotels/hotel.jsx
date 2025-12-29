@@ -23,9 +23,7 @@ function Hotel({data}) {
     else{
       setDisplay('none')
       setBtn('comment')
-      dispatch(changeComment({data,text}))
-      
-      
+      dispatch(changeComment({data,text}))     
     }
     setText('')
     
@@ -41,12 +39,12 @@ function Hotel({data}) {
             <hr />
             <div className="d-flex justify-content-between px-4">
               <span className="fw-bold"> Ville </span>
-              <span> {data.Ville} </span>
+              <span> {data.Ville}  </span>
             </div>
-            <hr className="" />
+            <hr/>
             <div className="d-flex align-items-center gap-3">
               <i className="bi bi-chat-right-text-fill"></i>
-              <p className="card-text"> {data.Commentaires[0]} </p>
+              <span className="card-text"> {data.Commentaires[0]} </span>
             </div>
             <hr />
             <form style={{display:display}}>

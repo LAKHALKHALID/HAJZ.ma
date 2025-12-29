@@ -1,7 +1,17 @@
+import { useDispatch, useSelector } from 'react-redux';
 import './navbar.css';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { getUsers } from '../slices/sliceuser';
 
 function Navbar() {
+  const dispatch = useDispatch()
+  const rol = useSelector(st=>st.user.rol)
+  useEffect(function(){
+    dispatch(getUsers())
+  },[dispatch])
+  console.log(rol);
+  
   return ( 
     <>
       <nav className="navbar navbar-expand-lg ">
@@ -19,18 +29,23 @@ function Navbar() {
                 <Link className="nav-link" to='/vole' >Vols</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" >Cars</Link>
+                <Link className="nav-link" to="/cars" >Cars</Link>
               </li>
               <li className="nav-item">
                 <Link to={'/hotels'} className="nav-link" >Hotels</Link>
               </li>
+              {
+                rol === "admin" ? <li className="nav-item">
+                <Link to={'/hotels'} className="nav-link" >Admin</Link>
+              </li>:""
+              }
 
             
               
             </ul>
 
             <div className='d-flex gap-3'>
-              <button type="button" className="btn btn-outline-light">Login</button>
+              <Link to={"/login"} className="btn btn-outline-light">Login</Link>
               <button type="button" className="btn btn-outline-light">Register</button>
             </div>
           
