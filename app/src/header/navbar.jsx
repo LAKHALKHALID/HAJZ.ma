@@ -16,7 +16,7 @@ function Navbar() {
                 <Link className="nav-link " aria-current="page" >Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" >Vols</Link>
+                <Link className="nav-link" to='/vole' >Vols</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" >Cars</Link>

@@ -154,13 +154,120 @@
     "Like": 95,
     "Dislike": 6
   }
-]
+],
 
-
-
-
-
-
+  "vols": [
+    {
+      "NumVol": "v1",
+      "flightName": "Royal Air Maroc – Fès to Paris",
+      "AeroportDepart": "Fès-Saïss",
+      "AeroportArrivee": "Orly Paris",
+      "DateDepart": "2024-01-01 08:30:00",
+      "duree": 3,
+      "typeVol": "Direct",
+      "price": 150,
+      "description": "Direct flight from Fès-Saïss to Orly Paris with cabin baggage included."
+    },
+    {
+      "NumVol": "v2",
+      "flightName": "Royal Air Maroc – Casablanca to Madrid",
+      "AeroportDepart": "Casablanca Mohammed V",
+      "AeroportArrivee": "Madrid Barajas",
+      "DateDepart": "2024-01-02 10:15:00",
+      "duree": 2,
+      "typeVol": "Direct",
+      "price": 130,
+      "description": "Comfortable direct flight from Casablanca to Madrid Barajas."
+    },
+    {
+      "NumVol": "v3",
+      "flightName": "Air France – Marrakech to Paris",
+      "AeroportDepart": "Marrakech Menara",
+      "AeroportArrivee": "Charles de Gaulle Paris",
+      "DateDepart": "2024-01-03 14:45:00",
+      "duree": 3,
+      "typeVol": "Direct",
+      "price": 170,
+      "description": "Direct flight from Marrakech to Paris CDG with on-board service."
+    },
+    {
+      "NumVol": "v4",
+      "flightName": "Royal Air Maroc – Rabat to London",
+      "AeroportDepart": "Rabat-Salé",
+      "AeroportArrivee": "Heathrow London",
+      "DateDepart": "2024-01-04 09:00:00",
+      "duree": 3,
+      "typeVol": "Direct",
+      "price": 180,
+      "description": "Direct flight from Rabat-Salé to Heathrow London. Includes 7kg cabin baggage."
+    },
+    {
+      "NumVol": "v5",
+      "flightName": "Vueling – Tanger to Barcelona",
+      "AeroportDepart": "Tanger Ibn Battouta",
+      "AeroportArrivee": "Barcelona El Prat",
+      "DateDepart": "2024-01-05 16:20:00",
+      "duree": 2,
+      "typeVol": "Direct",
+      "price": 120,
+      "description": "Fast direct flight from Tangier to Barcelona El Prat."
+    },
+    {
+      "NumVol": "v6",
+      "flightName": "Brussels Airlines – Agadir to Brussels",
+      "AeroportDepart": "Agadir Al Massira",
+      "AeroportArrivee": "Brussels Airport",
+      "DateDepart": "2024-01-06 11:10:00",
+      "duree": 3,
+      "typeVol": "Direct",
+      "price": 160,
+      "description": "Direct flight from Agadir to Brussels with comfortable seating."
+    },
+    {
+      "NumVol": "v7",
+      "flightName": "ITA Airways – Oujda to Rome",
+      "AeroportDepart": "Oujda Angads",
+      "AeroportArrivee": "Rome Fiumicino",
+      "DateDepart": "2024-01-07 13:40:00",
+      "duree": 3,
+      "typeVol": "Direct",
+      "price": 155,
+      "description": "Direct flight from Oujda to Rome Fiumicino with cabin baggage included."
+    },
+    {
+      "NumVol": "v8",
+      "flightName": "KLM – Nador to Amsterdam",
+      "AeroportDepart": "Nador Al Aroui",
+      "AeroportArrivee": "Amsterdam Schiphol",
+      "DateDepart": "2024-01-08 07:55:00",
+      "duree": 4,
+      "typeVol": "Direct",
+      "price": 200,
+      "description": "Direct flight from Nador to Amsterdam Schiphol with on-board service."
+    },
+    {
+      "NumVol": "v9",
+      "flightName": "TAP Air Portugal – Laayoune to Lisbon",
+      "AeroportDepart": "Laayoune Hassan I",
+      "AeroportArrivee": "Lisbon Portela",
+      "DateDepart": "2024-01-09 18:30:00",
+      "duree": 2,
+      "typeVol": "Direct",
+      "price": 140,
+      "description": "Direct flight from Laayoune to Lisbon Portela with free cabin baggage."
+    },
+    {
+      "NumVol": "v10",
+      "flightName": "Turkish Airlines – Casablanca to Istanbul",
+      "AeroportDepart": "Casablanca Mohammed V",
+      "AeroportArrivee": "Istanbul Airport",
+      "DateDepart": "2024-01-10 22:00:00",
+      "duree": 4,
+      "typeVol": "Direct",
+      "price": 220,
+      "description": "Direct night flight from Casablanca to Istanbul Airport with meals included."
+    }
+  ]
 
 
 
