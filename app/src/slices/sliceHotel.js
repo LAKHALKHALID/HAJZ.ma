@@ -13,6 +13,30 @@ export const getHotels = createAsyncThunk(
   }
 )
 
+export const postHotel = createAsyncThunk(
+  "hotel/postHotel",
+  async(hotel)=>{
+    return await axios.post('http://localhost:8000/hotels',hotel)
+    .then(res=>res.data)
+  }
+)
+
+export const deleteHotel = createAsyncThunk(
+  "hotel/deleteHotel",
+  async(hotel)=>{
+    await axios.delete('http://localhost:8000/hotels/'+hotel.id)
+    return hotel.id
+  }
+)
+
+export const putHotel = createAsyncThunk(
+  "hotel/putHotel",
+  async(hotel)=>{
+    return await axios.put('http://localhost:8000/hotels/'+hotel.id,hotel)
+    .then(res=>res.data)
+  }
+)
+
 const sliceHotel = createSlice({
   name:'hotel',
   initialState,
@@ -43,6 +67,16 @@ const sliceHotel = createSlice({
   },
   extraReducers:(builder)=>{
     builder.addCase(getHotels.fulfilled,(stat,act)=>{stat.Hotels=act.payload})
+            .addCase(postHotel.fulfilled,(stat,act)=>{stat.Hotels.push(act.payload)})
+            .addCase(deleteHotel.fulfilled,(st,act)=>{
+              let pos = st.Hotels.findIndex(h=>h.id === act.payload)
+              st.Hotels.splice(pos,1)
+            }
+            ).addCase(putHotel.fulfilled,(st,act)=>{
+              let pos = st.Hotels.findIndex(h=>h.id === act.payload.id)
+              st.Hotels.splice(pos,1,act.payload)
+              
+            })
   }
 })
 export const {like , dislike,changeComment}=sliceHotel.actions

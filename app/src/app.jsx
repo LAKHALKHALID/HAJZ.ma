@@ -5,6 +5,10 @@ import Hotels from './user/hotels/listHotels';
 import Voles from './user/voles/main';
 import ListCars from './user/cars/listCars';
 import Login from './login/login';
+import ManageHotels from './admin/manageHotels/manageHotels';
+import AjouterHotel from './admin/manageHotels/component/ajouter';
+import ManageCars from './admin/manageCars/manageCars';
+import AjouterCar from './admin/manageCars/component/ajouter';
 function App() {
   return ( 
     <div className=''>
@@ -15,6 +19,18 @@ function App() {
         <Route path='/vole' element={<Voles/>} />
         <Route path='/cars' element={<ListCars/>} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/manageHotels' element={<ManageHotels/>} />
+        <Route path='/ajouterHotel/' >
+            <Route index element={<AjouterHotel/>}/>
+            <Route path=':id' element={<AjouterHotel/>}  />
+        </Route>
+
+        <Route path='/manageCars' element={<ManageCars/>} />
+        <Route path='/ajouterCar/' >
+            <Route index element={<AjouterCar/>}/>
+            <Route path=':id' element={<AjouterCar/>}  />
+        </Route>
+
         
 
 

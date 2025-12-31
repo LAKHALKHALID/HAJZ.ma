@@ -1,161 +1,193 @@
 {
-
-"cars":[
-  {
-    "id": "1",
-    "brand": "Toyota",
-    "model": "Corolla",
-    "pricePerDay": 55,
-    "available": true,
-    "image": "img1.jpg",
-    "pickupLocation": "Casablanca Airport",
-    "description": "A comfortable and fuel-efficient car, perfect for city driving and short trips."
-  },
-  {
-    "id": "2",
-    "brand": "Hyundai",
-    "model": "i10",
-    "pricePerDay": 40,
-    "available": true,
-    "image": "img2.jpg",
-    "pickupLocation": "Rabat City Center",
-    "description": "A small and economical car, easy to park and ideal for city use."
-  },
-  {
-    "id": "3",
-    "brand": "Dacia",
-    "model": "Logan",
-    "pricePerDay": 45,
-    "available": false,
-    "image": "img3.jpg",
-    "pickupLocation": "Fes Airport",
-    "description": "A practical sedan with good space, suitable for families and long drives."
-  },
-  {
-    "id": "4",
-    "brand": "Volkswagen",
-    "model": "Golf",
-    "pricePerDay": 65,
-    "available": true,
-    "image": "img4.jpg",
-    "pickupLocation": "Marrakech Airport",
-    "description": "A reliable and stylish hatchback with excellent driving comfort."
-  },
-  {
-    "id": "5",
-    "brand": "Peugeot",
-    "model": "208",
-    "pricePerDay": 50,
-    "available": true,
-    "image": "img5.jpg",
-    "pickupLocation": "Tangier Port",
-    "description": "A modern compact car with low fuel consumption and smooth handling."
-  },
-  {
-    "id": "6",
-    "brand": "Renault",
-    "model": "Clio",
-    "pricePerDay": 48,
-    "available": false,
-    "image": "img6.jpg",
-    "pickupLocation": "Agadir Airport",
-    "description": "A popular city car, comfortable and easy to drive."
-  },
-  {
-    "id": "7",
-    "brand": "Kia",
-    "model": "Sportage",
-    "pricePerDay": 85,
-    "available": true,
-    "image": "img7.jpg",
-    "pickupLocation": "Casablanca Downtown",
-    "description": "A spacious SUV, perfect for family trips and long journeys."
-  },
-  {
-    "id": "8",
-    "brand": "Nissan",
-    "model": "Qashqai",
-    "pricePerDay": 80,
-    "available": true,
-    "image": "img8.jpg",
-    "pickupLocation": "Rabat Airport",
-    "description": "A comfortable crossover with modern features and great road stability."
-  },
-  {
-    "id": "9",
-    "brand": "Fiat",
-    "model": "Panda",
-    "pricePerDay": 38,
-    "available": true,
-    "image": "img9.jpg",
-    "pickupLocation": "Fes City Center",
-    "description": "An affordable and compact car, ideal for short city trips."
-  }
-],
-
-"hotels":[
-  {
-    "IdHotel": "h1",
-    "Nom_Hotel": "Farah Inn",
-    "Description": "Situé à Ifrane dans la région du Moyen Atlas, idéal pour se détendre.",
-    "Ville": "Ifrane",
-    "Image": ["img1.jpg", "img2.jpg", "img3.jpg"],
-    "Commentaires": ["trop loin du centre-ville", "l'accueil top"],
-    "Like": 90,
-    "Dislike": 5
-  },
-  {
-    "IdHotel": "h2",
-    "Nom_Hotel": "Atlas View Hotel",
-    "Description": "Hôtel moderne avec une belle vue sur les montagnes de l’Atlas.",
-    "Ville": "Marrakech",
-    "Image": ["img4.jpg", "img5.jpg", "img6.jpg"],
-    "Commentaires": ["vue magnifique", "chambres propres"],
-    "Like": 120,
-    "Dislike": 12
-  },
-  {
-    "IdHotel": "h3",
-    "Nom_Hotel": "Riad Andalouse",
-    "Description": "Riad traditionnel au cœur de la médina, ambiance calme et chaleureuse.",
-    "Ville": "Fès",
-    "Image": ["img7.jpg", "img8.jpg", "img9.jpg"],
-    "Commentaires": ["très calme", "personnel sympathique"],
-    "Like": 150,
-    "Dislike": 8
-  },
-  {
-    "IdHotel": "h4",
-    "Nom_Hotel": "Ocean Blue Resort",
-    "Description": "Resort moderne proche de la plage, parfait pour les vacances.",
-    "Ville": "Agadir",
-    "Image": ["img10.jpg", "img11.jpg", "img12.jpg"],
-    "Commentaires": ["proche de la mer", "bon service"],
-    "Like": 200,
-    "Dislike": 15
-  },
-  {
-    "IdHotel": "h5",
-    "Nom_Hotel": "City Comfort Hotel",
-    "Description": "Hôtel confortable situé au centre-ville, proche des commerces.",
-    "Ville": "Casablanca",
-    "Image": ["img13.jpg", "img14.jpg", "img15.jpg"],
-    "Commentaires": ["bien situé", "bon rapport qualité-prix"],
-    "Like": 175,
-    "Dislike": 20
-  },
-  {
-    "IdHotel": "h6",
-    "Nom_Hotel": "Desert Rose Lodge",
-    "Description": "Lodge authentique offrant une expérience unique près du désert.",
-    "Ville": "Ouarzazate",
-    "Image": ["img16.jpg", "img17.jpg", "img18.jpg"],
-    "Commentaires": ["expérience unique", "très dépaysant"],
-    "Like": 95,
-    "Dislike": 6
-  }
-],
-
+  "cars": [
+    {
+      "id": "1",
+      "brand": "Toyota",
+      "description": "khalid",
+      "model": "Corolla",
+      "Image": "img1.jpg",
+      "pricePerDay": "55",
+      "pickupLocation": "Casablanca Airport"
+    },
+    {
+      "id": "2",
+      "brand": "Hyundai",
+      "model": "i10",
+      "pricePerDay": 40,
+      "available": true,
+      "image": "img2.jpg",
+      "pickupLocation": "Rabat City Center",
+      "description": "A small and economical car, easy to park and ideal for city use."
+    },
+    {
+      "id": "3",
+      "brand": "Dacia",
+      "model": "Logan",
+      "pricePerDay": 45,
+      "available": false,
+      "image": "img3.jpg",
+      "pickupLocation": "Fes Airport",
+      "description": "A practical sedan with good space, suitable for families and long drives."
+    },
+    {
+      "id": "4",
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "pricePerDay": 65,
+      "available": true,
+      "image": "img4.jpg",
+      "pickupLocation": "Marrakech Airport",
+      "description": "A reliable and stylish hatchback with excellent driving comfort."
+    },
+    {
+      "id": "5",
+      "brand": "Peugeot",
+      "Description": "dfsgsfdhg",
+      "model": "208",
+      "Image": "img2.jpg",
+      "pricePerDay": "50",
+      "pickupLocation": "Tangier Port"
+    },
+    {
+      "id": "6",
+      "brand": "Renault",
+      "model": "Clio",
+      "pricePerDay": 48,
+      "available": false,
+      "image": "img6.jpg",
+      "pickupLocation": "Agadir Airport",
+      "description": "A popular city car, comfortable and easy to drive."
+    },
+    {
+      "id": "7",
+      "brand": "Kia",
+      "model": "Sportage",
+      "pricePerDay": 85,
+      "available": true,
+      "image": "img7.jpg",
+      "pickupLocation": "Casablanca Downtown",
+      "description": "A spacious SUV, perfect for family trips and long journeys."
+    },
+    {
+      "id": "8",
+      "brand": "Nissan",
+      "model": "Qashqai",
+      "pricePerDay": 80,
+      "available": true,
+      "image": "img8.jpg",
+      "pickupLocation": "Rabat Airport",
+      "description": "A comfortable crossover with modern features and great road stability."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "d8a7",
+      "Nom_Hotel": "Farah Inn",
+      "Description": "Situé à Ifrane dans la région du Moyen Atlas, idéal pour se détendre.",
+      "Ville": "Ifrane",
+      "Image": [
+        "img3.jpg",
+        "img4.jpg",
+        "img1.jpg"
+      ],
+      "Commentaires": [
+        "trop loin du centre-ville",
+        "l'accueil top"
+      ],
+      "Like": 90,
+      "Dislike": 5
+    },
+    {
+      "IdHotel": "h2",
+      "Nom_Hotel": "Atlas View Hotel",
+      "Description": "Hôtel moderne avec une belle vue sur les montagnes de l’Atlas.",
+      "Ville": "Marrakech",
+      "Image": [
+        "img4.jpg",
+        "img5.jpg",
+        "img6.jpg"
+      ],
+      "Commentaires": [
+        "vue magnifique",
+        "chambres propres"
+      ],
+      "Like": 120,
+      "Dislike": 12,
+      "id": "aa02"
+    },
+    {
+      "IdHotel": "h3",
+      "Nom_Hotel": "Riad Andalouse",
+      "Description": "Riad traditionnel au cœur de la médina, ambiance calme et chaleureuse.",
+      "Ville": "Fès",
+      "Image": [
+        "img7.jpg",
+        "img8.jpg",
+        "img9.jpg"
+      ],
+      "Commentaires": [
+        "très calme",
+        "personnel sympathique"
+      ],
+      "Like": 150,
+      "Dislike": 8,
+      "id": "f7f2"
+    },
+    {
+      "IdHotel": "h4",
+      "Nom_Hotel": "Ocean Blue Resort",
+      "Description": "Resort moderne proche de la plage, parfait pour les vacances.",
+      "Ville": "Agadir",
+      "Image": [
+        "img10.jpg",
+        "img11.jpg",
+        "img12.jpg"
+      ],
+      "Commentaires": [
+        "proche de la mer",
+        "bon service"
+      ],
+      "Like": 200,
+      "Dislike": 15,
+      "id": "05ac"
+    },
+    {
+      "IdHotel": "h5",
+      "Nom_Hotel": "City Comfort Hotel",
+      "Description": "Hôtel confortable situé au centre-ville, proche des commerces.",
+      "Ville": "Casablanca",
+      "Image": [
+        "img13.jpg",
+        "img14.jpg",
+        "img15.jpg"
+      ],
+      "Commentaires": [
+        "bien situé",
+        "bon rapport qualité-prix"
+      ],
+      "Like": 175,
+      "Dislike": 20,
+      "id": "9815"
+    },
+    {
+      "IdHotel": "h6",
+      "Nom_Hotel": "Desert Rose Lodge",
+      "Description": "Lodge authentique offrant une expérience unique près du désert.",
+      "Ville": "Ouarzazate",
+      "Image": [
+        "img16.jpg",
+        "img17.jpg",
+        "img18.jpg"
+      ],
+      "Commentaires": [
+        "expérience unique",
+        "très dépaysant"
+      ],
+      "Like": 95,
+      "Dislike": 6,
+      "id": "04b9"
+    }
+  ],
   "vols": [
     {
       "NumVol": "v1",
@@ -166,7 +198,8 @@
       "duree": 3,
       "typeVol": "Direct",
       "price": 150,
-      "description": "Direct flight from Fès-Saïss to Orly Paris with cabin baggage included."
+      "description": "Direct flight from Fès-Saïss to Orly Paris with cabin baggage included.",
+      "id": "e1e2"
     },
     {
       "NumVol": "v2",
@@ -177,7 +210,8 @@
       "duree": 2,
       "typeVol": "Direct",
       "price": 130,
-      "description": "Comfortable direct flight from Casablanca to Madrid Barajas."
+      "description": "Comfortable direct flight from Casablanca to Madrid Barajas.",
+      "id": "e405"
     },
     {
       "NumVol": "v3",
@@ -188,7 +222,8 @@
       "duree": 3,
       "typeVol": "Direct",
       "price": 170,
-      "description": "Direct flight from Marrakech to Paris CDG with on-board service."
+      "description": "Direct flight from Marrakech to Paris CDG with on-board service.",
+      "id": "8b5b"
     },
     {
       "NumVol": "v4",
@@ -199,7 +234,8 @@
       "duree": 3,
       "typeVol": "Direct",
       "price": 180,
-      "description": "Direct flight from Rabat-Salé to Heathrow London. Includes 7kg cabin baggage."
+      "description": "Direct flight from Rabat-Salé to Heathrow London. Includes 7kg cabin baggage.",
+      "id": "e469"
     },
     {
       "NumVol": "v5",
@@ -210,7 +246,8 @@
       "duree": 2,
       "typeVol": "Direct",
       "price": 120,
-      "description": "Fast direct flight from Tangier to Barcelona El Prat."
+      "description": "Fast direct flight from Tangier to Barcelona El Prat.",
+      "id": "0cb6"
     },
     {
       "NumVol": "v6",
@@ -221,7 +258,8 @@
       "duree": 3,
       "typeVol": "Direct",
       "price": 160,
-      "description": "Direct flight from Agadir to Brussels with comfortable seating."
+      "description": "Direct flight from Agadir to Brussels with comfortable seating.",
+      "id": "f945"
     },
     {
       "NumVol": "v7",
@@ -232,7 +270,8 @@
       "duree": 3,
       "typeVol": "Direct",
       "price": 155,
-      "description": "Direct flight from Oujda to Rome Fiumicino with cabin baggage included."
+      "description": "Direct flight from Oujda to Rome Fiumicino with cabin baggage included.",
+      "id": "943a"
     },
     {
       "NumVol": "v8",
@@ -243,7 +282,8 @@
       "duree": 4,
       "typeVol": "Direct",
       "price": 200,
-      "description": "Direct flight from Nador to Amsterdam Schiphol with on-board service."
+      "description": "Direct flight from Nador to Amsterdam Schiphol with on-board service.",
+      "id": "f6c0"
     },
     {
       "NumVol": "v9",
@@ -254,7 +294,8 @@
       "duree": 2,
       "typeVol": "Direct",
       "price": 140,
-      "description": "Direct flight from Laayoune to Lisbon Portela with free cabin baggage."
+      "description": "Direct flight from Laayoune to Lisbon Portela with free cabin baggage.",
+      "id": "0d38"
     },
     {
       "NumVol": "v10",
@@ -265,30 +306,26 @@
       "duree": 4,
       "typeVol": "Direct",
       "price": 220,
-      "description": "Direct night flight from Casablanca to Istanbul Airport with meals included."
+      "description": "Direct night flight from Casablanca to Istanbul Airport with meals included.",
+      "id": "a140"
     }
   ],
-  "users":[
+  "users": [
     {
-      "id":"1",
-      "firstName":"khalid",
-      "lastName":"lakhal",
-      "email":"khalid@gmail.com",
-      "password":"123",
-      "rol":"admin"
+      "id": "1",
+      "firstName": "khalid",
+      "lastName": "lakhal",
+      "email": "khalid@gmail.com",
+      "password": "123",
+      "rol": "admin"
     },
     {
-      "id":"2",
-      "firstName":"jamal",
-      "lastName":"lakhal",
-      "email":"jamal@gmail.com",
-      "password":"123",
-      "rol":"user"
+      "id": "2",
+      "firstName": "jamal",
+      "lastName": "lakhal",
+      "email": "jamal@gmail.com",
+      "password": "123",
+      "rol": "user"
     }
-
   ]
-
-
-
-
 }

@@ -4,7 +4,7 @@ import axios from "axios";
 
 const initialState={
   Users:[],
-  rol:"user",
+  rol:"admin",
 }
 
 export const getUsers=createAsyncThunk(
@@ -19,11 +19,13 @@ const sliceUser = createSlice({
   name:'user',
   initialState,
   reducers:{
-
+    changeRol:(st,act)=>{ st.rol=act.payload}
   },
   extraReducers:(builder)=>{
     builder.addCase(getUsers.fulfilled,(st,act)=>{ st.Users=act.payload})
   }
 })
+
+export const {changeRol} = sliceUser.actions
 
 export default sliceUser.reducer

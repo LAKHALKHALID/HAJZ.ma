@@ -9,8 +9,8 @@ function Navbar() {
   const rol = useSelector(st=>st.user.rol)
   useEffect(function(){
     dispatch(getUsers())
-  },[dispatch])
-  console.log(rol);
+  },[])
+  
   
   return ( 
     <>
@@ -35,9 +35,18 @@ function Navbar() {
                 <Link to={'/hotels'} className="nav-link" >Hotels</Link>
               </li>
               {
-                rol === "admin" ? <li className="nav-item">
-                <Link to={'/hotels'} className="nav-link" >Admin</Link>
-              </li>:""
+                rol === "admin" ? <li className="nav-item dropdown">
+          <Link className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dashboard
+          </Link>
+          <ul className="dropdown-menu">
+            <li><Link className="dropdown-item text-dark"  >Manage User</Link></li>
+            <li><Link className="dropdown-item text-dark"  >Manage Vols</Link></li>
+            <li><Link className="dropdown-item text-dark" to="/manageCars"  >Manage Cars</Link></li>
+            <li><Link className="dropdown-item text-dark" to="/manageHotels"  >Manage Hotels</Link></li>
+
+          </ul>
+        </li> :""
               }
 
             
