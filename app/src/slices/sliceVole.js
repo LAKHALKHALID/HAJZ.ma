@@ -45,7 +45,7 @@ const sliceVole = createSlice({
   },
   extraReducers:(builder)=>{
     builder.addCase(getVoles.fulfilled,(st,act)=>{ st.Voles=act.payload})
-      .addCase(postVole.fulfilled,(stat,act)=>{stat.Cars.push(act.payload)})
+      .addCase(postVole.fulfilled,(stat,act)=>{stat.Voles.push(act.payload)})
                 .addCase(deleteVole.fulfilled,(st,act)=>{
                               let pos = st.Voles.findIndex(c=>c.id === act.payload)
                               st.Voles.splice(pos,1)

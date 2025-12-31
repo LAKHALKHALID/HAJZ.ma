@@ -1,13 +1,14 @@
 import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getUsers ,changeRol } from "../slices/sliceuser";
+import { useNavigate } from "react-router-dom";
 
 
 function Login() {
   const txtEmail = useRef()
   const txtPass = useRef()
   const frm = useRef()
-
+  const navigate = useNavigate()
 
 
   const userData= useSelector(st=>st.user.Users)
@@ -17,8 +18,10 @@ function Login() {
     let Email    = txtEmail.current.value;
     let pass = txtPass.current.value;
     let db = userData.filter( u => u.email === Email & u.password === pass)
-    console.log(db[0].rol);
     dispatch(changeRol(db[0 ].rol))
+    if(db.length===1){
+        navigate('/manageUsers')
+    }
     frm.current.reset()
   }
 

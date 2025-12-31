@@ -15,6 +15,29 @@ export const getUsers=createAsyncThunk(
   }
 )
 
+export const postUser = createAsyncThunk(
+  "user/postUser",
+  async(user)=>{
+    return await axios.post('http://localhost:8000/users',user)
+    .then(res=>res.data)
+  }
+)
+
+export const deleteUser = createAsyncThunk(
+  "user/deleteUser",
+  async(user)=>{
+    await axios.delete('http://localhost:8000/users/'+user.id)
+    return user.id
+  }
+)
+
+export const putUser = createAsyncThunk(
+  "user/putUser",
+  async(user)=>{
+    return await axios.put('http://localhost:8000/cars/'+user.id,user)
+    .then(res=>res.data)
+  }
+)
 const sliceUser = createSlice({
   name:'user',
   initialState,
@@ -23,6 +46,17 @@ const sliceUser = createSlice({
   },
   extraReducers:(builder)=>{
     builder.addCase(getUsers.fulfilled,(st,act)=>{ st.Users=act.payload})
+    .addCase(postUser.fulfilled,(stat,act)=>{stat.Users.push(act.payload)})
+              .addCase(deleteUser.fulfilled,(st,act)=>{
+                            let pos = st.Users.findIndex(c=>c.id === act.payload)
+                            st.Users.splice(pos,1)
+                          }
+                      )
+                .addCase(putUser.fulfilled,(st,act)=>{
+                  let pos = st.Users.findIndex(c=>c.id === act.payload.id)
+                  st.Users.splice(pos,1,act.payload)
+                  
+                })
   }
 })
 

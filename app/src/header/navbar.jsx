@@ -40,8 +40,8 @@ function Navbar() {
             Dashboard
           </Link>
           <ul className="dropdown-menu">
-            <li><Link className="dropdown-item text-dark"  >Manage User</Link></li>
-            <li><Link className="dropdown-item text-dark"  >Manage Vols</Link></li>
+            <li><Link className="dropdown-item text-dark" to={'/manageUsers'} >Manage User</Link></li>
+            <li><Link className="dropdown-item text-dark" to={"/manageVols"}  >Manage Vols</Link></li>
             <li><Link className="dropdown-item text-dark" to="/manageCars"  >Manage Cars</Link></li>
             <li><Link className="dropdown-item text-dark" to="/manageHotels"  >Manage Hotels</Link></li>
 

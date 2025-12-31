@@ -5,7 +5,7 @@
       "brand": "Toyota",
       "description": "khalid",
       "model": "Corolla",
-      "Image": "img1.jpg",
+      "Image": "img3.jpg",
       "pricePerDay": "55",
       "pickupLocation": "Casablanca Airport"
     },
@@ -190,16 +190,15 @@
   ],
   "vols": [
     {
-      "NumVol": "v1",
+      "id": "e1e2",
       "flightName": "Royal Air Maroc – Fès to Paris",
       "AeroportDepart": "Fès-Saïss",
       "AeroportArrivee": "Orly Paris",
-      "DateDepart": "2024-01-01 08:30:00",
-      "duree": 3,
+      "DateDepart": "2024-01-01 08:30:55",
+      "duree": "3",
       "typeVol": "Direct",
-      "price": 150,
-      "description": "Direct flight from Fès-Saïss to Orly Paris with cabin baggage included.",
-      "id": "e1e2"
+      "price": "150",
+      "description": "Direct flight from Fès-Saïss to Orly Paris with cabin baggage included."
     },
     {
       "NumVol": "v2",
@@ -296,19 +295,8 @@
       "price": 140,
       "description": "Direct flight from Laayoune to Lisbon Portela with free cabin baggage.",
       "id": "0d38"
-    },
-    {
-      "NumVol": "v10",
-      "flightName": "Turkish Airlines – Casablanca to Istanbul",
-      "AeroportDepart": "Casablanca Mohammed V",
-      "AeroportArrivee": "Istanbul Airport",
-      "DateDepart": "2024-01-10 22:00:00",
-      "duree": 4,
-      "typeVol": "Direct",
-      "price": 220,
-      "description": "Direct night flight from Casablanca to Istanbul Airport with meals included.",
-      "id": "a140"
     }
+    
   ],
   "users": [
     {

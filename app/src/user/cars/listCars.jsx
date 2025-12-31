@@ -50,7 +50,7 @@ function ListCars() {
     
     </div>
     <div className="row container mx-auto py-5">
-        {searsh.map((c,i)=>    <Car data={c} key={i} />)}
+        {data.map((c,i)=>    <Car data={c} key={i} />)}
     </div>
     </>
   );

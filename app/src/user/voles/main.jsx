@@ -68,7 +68,7 @@ function Voles() {
     
     </div>
     <div className="mx-auto py-5">
-        {searsh.map((v,i)=>    <Vole info={v} key={i} />)}
+        {data.map((v,i)=>    <Vole info={v} key={i} />)}
     </div>
     </>
   );
