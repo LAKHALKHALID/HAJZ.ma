@@ -13,12 +13,14 @@ import ManageVols from './admin/manageVole/manageVols';
 import AjouterVole from './admin/manageVole/component/ajouter';
 import ManageUsers from './admin/manageUsers/manageUsers';
 import AjouterUser from './admin/manageUsers/component/ajouter';
+import Home from './Home/home';
 function App() {
   return ( 
     <div className=''>
     <BrowserRouter>
       <Navbar/>
       <Routes>
+        <Route path='/' element={<Home/>} />
         <Route path='/hotels' element={<Hotels/>} />
         <Route path='/vole' element={<Voles/>} />
         <Route path='/cars' element={<ListCars/>} />

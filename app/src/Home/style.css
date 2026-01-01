@@ -1,0 +1,56 @@
+
+html{
+  scroll-behavior: smooth;
+}
+.bg-nav{
+  background-color: var(--one);
+}
+header nav{
+  padding: 0 !important;
+}
+.parent li{
+  margin: 10px 8px;
+}
+.parent li a{
+    font-size: 16px;
+    font-weight:bold;
+    position: relative;
+    
+    padding: 10px 5 !important;
+
+}
+
+.bg-brand{
+  font-size: 30px !important;
+  font-weight: bold;
+}
+
+
+.c-item{
+  max-height:calc(100vh - 55px) ;
+}
+.c-img{
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+.parent-carsousel h1{
+  margin-top:70px;
+}
+
+.img{
+  max-height: 250px
+}
+.img-team{
+  width: 200px;
+  height: 200px;
+}
+.box{
+  transition: .3s;
+}
+.box:hover{
+  transform: translateY(-20px);
+}
+.footer{
+  background-color: #1A4FA0;
+}
