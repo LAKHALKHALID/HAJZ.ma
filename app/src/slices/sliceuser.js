@@ -4,7 +4,7 @@ import axios from "axios";
 
 const initialState={
   Users:[],
-  rol:"admin",
+  rol:"",
 }
 
 export const getUsers=createAsyncThunk(
