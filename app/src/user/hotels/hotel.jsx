@@ -6,6 +6,7 @@ function Hotel({data}) {
   const [btn , setBtn]=useState('comment')
   const [display,setDisplay]=useState('none')
   const [text,setText]=useState('')
+  const [num,setNum]=useState(0)
   const dispatch = useDispatch()
 
   const handlerLike= (data)=>{
@@ -28,11 +29,33 @@ function Hotel({data}) {
     setText('')
     
   } 
+  const changeLeft = ()=>{
+      if(num === 0){
+        setNum(2)
+      }
+      else{
+        setNum(num-1)
+      }
+  }
+
+  const changeRight = ()=>{
+      if(num === 2){
+        setNum(0)
+      }
+      else{
+        setNum(num+1)
+      }
+  }
+
   return ( 
     <>
-    <div className="col-md-6 col-lg-4 mb-4">
-      <div className="card  h-100 shadow">
-          <img src={"./imghotels/"+data.Image[0]} className="card-img-top" alt="" />
+    <div className="col-md-6 col-lg-4 mb-4 box">
+      <div className="card  h-100 shadow position-relative">
+          <img src={"./imghotels/"+data.Image[num]} className="card-img-top img" alt="" />
+          <div className='button '>
+            <span onClick={changeLeft} className='text-light button_l'><i className="bi bi-chevron-left "></i></span>
+            <span onClick={changeRight} className='text-light button_r'><i className="bi bi-chevron-right"></i></span>
+          </div>
           <div className="card-body">
             <h5 className="card-title text-center"> {data.Nom_Hotel} </h5>
             <div className="card-text text-center"> {data.Description} </div>

@@ -1,3 +1,34 @@
 * hr{
   margin: 5px auto;
 }
+
+.box{
+  transition: .3s;
+}
+.box:hover{
+  transform: translateY(-15px);
+}
+img:hover{
+  filter: brightness(0.6);
+}
+
+.button_l{
+  position: absolute;
+  left: 10px;
+  top: 100px;
+  cursor: pointer;
+}
+.button_r{
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  cursor: pointer;
+
+}
+
+.button_l:hover{
+  display: block;
+}
+/* .button_r:hover{
+  display: block;
+} */
