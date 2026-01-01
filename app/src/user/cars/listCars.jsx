@@ -18,8 +18,6 @@ function ListCars() {
   
   const afficher = ()=>{
     let d=car.current.value
-    // let x = data.filter( v =>v.AeroportDepart === d & v.AeroportArrivee === a &  v.DateDepart.split(" ")[0] === t ? v:"")
-    // setSearsh(x)
     let cars = data.filter(c => c.pickupLocation === d )
     console.log(cars);
     setSearsh(cars)
@@ -34,23 +32,42 @@ function ListCars() {
       <h1 className='fw-bold py-5 fs-1'>Find Your Perfect Cars  </h1>
       <p className=" fs-3 pb-5">Compare and book flights from hundreds of airlines worldwide.</p>
     </div>
-    <form className='container d-flex gap-2 align-items-center justify-content-center mx-auto w-50'>
-      
-        
-          <select ref={car} className="form-select form-select-lg mb-3" aria-label="Large select example">
-              <option selected>Searsh about your cars</option>
-              {data.map((c,i)=><option key={i} calue={c.pickupLocation}>{c.pickupLocation}</option>)}
-          </select>
-            <input type="button" onClick={afficher} className='btn btn-primary' value={'Searsh'} />
-        
-    
-      
-      
-    </form>
-    
+      <div className="container">
+
+        <div className="card shadow-sm border-0 rounded-4 p-4 mx-auto" style={{ maxWidth: "700px" }}>
+          <form className="row g-3 align-items-end justify-content-center">
+            <div className="col-md-9">
+              <select
+                ref={car}
+                className="form-select form-select-lg"
+              >
+                <option value="">
+                  Search about your cars
+                </option>
+
+                {data.map((c, i) => (
+                  <option key={i} value={c.pickupLocation}>
+                    {c.pickupLocation}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="col-md-3 d-grid">
+              <button type="button" onClick={afficher} 
+                className="btn btn-primary btn-lg">Search
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
     </div>
     <div className="row container mx-auto py-5">
-        {data.map((c,i)=>    <Car data={c} key={i} />)}
+        {
+        // data.map((c,i)=>    <Car data={c} key={i} />)
+        searsh.length ===0 ?data.map((c,i)=>    <Car data={c} key={i} />): searsh.map((c,i)=><Car data={c} key={i} />)
+        }
     </div>
     </>
   );
