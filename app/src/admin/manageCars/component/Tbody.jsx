@@ -18,7 +18,7 @@ function TbodyCars ({info}) {
       <td>{info.model}</td>
       <td>{info.pickupLocation}</td>
       <td>{}
-        <img src={"./imgcars/"+info.image} alt="" style={{width:"40px",height:"40px"}} />
+        <img src={"./imgcars/"+info.image} alt={info.brand} style={{width:"40px",height:"40px"}} />
       </td>
 
       <td>

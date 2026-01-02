@@ -9,6 +9,7 @@ function AjouterUser() {
   const [btn,setBtn]= useState('Ajouter')
   const navigate = useNavigate()
   const {id} = useParams()
+  const [etat,setEtat]=useState(false)
   const data = useSelector(st => st.user.Users)
 
   const [infoUser,setInfoUser]=useState(
@@ -47,7 +48,6 @@ function AjouterUser() {
       dispatch(postUser(user))
     }
     else{
-      
       dispatch(putUser(user))
     }
     setBtn('Ajouter')
@@ -66,6 +66,8 @@ function AjouterUser() {
     if (db) {
       setInfoUser(db)
       setBtn('Update')
+      setEtat(true)
+
     }
   }
 }, [id, data])
@@ -76,41 +78,92 @@ function AjouterUser() {
   
   return ( 
     <>
-    
-    <form className="d-flex flex-column gap-2  w-50 mx-auto mt-2 mb-5">
+    <form className="container mt-4 mb-5">
+      <div className="card shadow-sm border-0">
+        
+        <div className="card-header bg-primary text-white">
+          <h5 className="mb-0 text-center"> User Information</h5>
+        </div>
 
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">#ID : </label>
-          <input ref={txtId} defaultValue={infoUser.id} type="text" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">First Name : </label>
-          <input ref={txtFirst} defaultValue={infoUser.firstName }type="text" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">Last Name : </label>
-          <input ref={txtLast} defaultValue={infoUser.lastName }type="text" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">Email : </label>
-          <input ref={txtEmail} defaultValue={infoUser.email }type="email" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">Password : </label>
-          <input ref={txtPass} defaultValue={infoUser.password} type="password" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">Role : </label>
-          <input ref={txtRol} type="text" defaultValue={infoUser.rol} className="form-control"/>
-      </div>
-      
-      
-      
-      <div>
-        <input type="button" onClick={handlerAjouter} value={btn} className="btn btn-primary" />
-      </div>
+        <div className="card-body">
+          <div className="row g-3">
 
+            <div className="col-md-6">
+              <label className="form-label fw-bold">#ID</label>
+              <input
+                ref={txtId}
+                defaultValue={infoUser.id}
+                type="text"
+                className="form-control"
+                disabled={etat}
+              />
+            </div>
+
+            <div className="col-md-6">
+              <label className="form-label fw-bold">Role</label>
+              <input
+                ref={txtRol}
+                defaultValue={infoUser.rol}
+                type="text"
+                className="form-control"
+              />
+            </div>
+
+            <div className="col-md-6">
+              <label className="form-label fw-bold">First Name</label>
+              <input
+                ref={txtFirst}
+                defaultValue={infoUser.firstName}
+                type="text"
+                className="form-control"
+              />
+            </div>
+
+            <div className="col-md-6">
+              <label className="form-label fw-bold">Last Name</label>
+              <input
+                ref={txtLast}
+                defaultValue={infoUser.lastName}
+                type="text"
+                className="form-control"
+              />
+            </div>
+
+            <div className="col-md-6">
+              <label className="form-label fw-bold">Email</label>
+              <input
+                ref={txtEmail}
+                defaultValue={infoUser.email}
+                type="email"
+                className="form-control"
+              />
+            </div>
+
+            <div className="col-md-6">
+              <label className="form-label fw-bold">Password</label>
+              <input
+                ref={txtPass}
+                defaultValue={infoUser.password}
+                type="password"
+                className="form-control"
+              />
+            </div>
+
+            <div className="col-12 text-end mt-3">
+              <button
+                type="button"
+                onClick={handlerAjouter}
+                className="btn btn-primary px-5"
+              >
+                {btn}
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </form>
+
     
     </>
   );

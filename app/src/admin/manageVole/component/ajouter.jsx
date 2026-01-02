@@ -87,54 +87,121 @@ function AjouterVole() {
   
   return ( 
     <>
-    
-    <form className="d-flex flex-column gap-2  w-50 mx-auto mt-2 mb-5">
+    <div className="container my-5">
+    <div className="card shadow border-0">
       
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">#ID : </label>
-          <input ref={txtId} defaultValue={infoVole.id} type="text" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">flight Name : </label>
-          <input ref={txtflight} defaultValue={infoVole.flightName }type="text" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">Aeroport Depart : </label>
-          <input ref={txtDepart} defaultValue={infoVole.AeroportDepart }type="text" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">Aeroport Arrivee : </label>
-          <input ref={txtArrivee} defaultValue={infoVole.AeroportArrivee }type="text" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">Date Depart : </label>
-          <input ref={txtDate} defaultValue={infoVole.pricePerDay }type="text" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">duree : </label>
-          <input ref={txtDuree} defaultValue={infoVole.duree} type="number" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">type Vole : </label>
-          <input ref={txtType} defaultValue={infoVole.typeVol} type="text" className="form-control" />
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">Description : </label>
-          <textarea ref={txtDescription} defaultValue={infoVole.description} className="form-control"></textarea>
-      </div>
-      <div className="d-flex flex-column gap-2">
-          <label htmlFor="" className="fw-bold">Price : </label>
-          <input ref={txtPrice} defaultValue={infoVole.price} type="number" className="form-control" />
-      </div>
-      
-      
-      
-      <div>
-        <input type="button" onClick={handlerAjouter} value={btn} className="btn btn-primary" />
+      <div className="card-header bg-primary text-white">
+        <h5 className="mb-0 text-center"> Flight Information</h5>
       </div>
 
-    </form>
-    
+      <div className="card-body">
+        <form className="row g-3">
+
+          <div className="col-md-6">
+            <label className="form-label fw-bold">#ID</label>
+            <input
+              ref={txtId}
+              defaultValue={infoVole.id}
+              type="text"
+              className="form-control"
+              disabled
+            />
+          </div>
+
+          <div className="col-md-6">
+            <label className="form-label fw-bold">Flight Name</label>
+            <input
+              ref={txtflight}
+              defaultValue={infoVole.flightName}
+              type="text"
+              className="form-control"
+            />
+          </div>
+
+          <div className="col-md-6">
+            <label className="form-label fw-bold">Aeroport Depart</label>
+            <input
+              ref={txtDepart}
+              defaultValue={infoVole.AeroportDepart}
+              type="text"
+              className="form-control"
+            />
+          </div>
+
+          <div className="col-md-6">
+            <label className="form-label fw-bold">Aeroport Arrivee</label>
+            <input
+              ref={txtArrivee}
+              defaultValue={infoVole.AeroportArrivee}
+              type="text"
+              className="form-control"
+            />
+          </div>
+
+          <div className="col-md-6">
+            <label className="form-label fw-bold">Date Depart</label>
+            <input
+              ref={txtDate}
+              defaultValue={infoVole.dateDepart}
+              type="datetime-local"
+              className="form-control"
+            />
+          </div>
+
+          <div className="col-md-3">
+            <label className="form-label fw-bold">Duration (h)</label>
+            <input
+              ref={txtDuree}
+              defaultValue={infoVole.duree}
+              type="number"
+              className="form-control"
+            />
+          </div>
+
+          <div className="col-md-3">
+            <label className="form-label fw-bold">Type</label>
+            <input
+              ref={txtType}
+              defaultValue={infoVole.typeVol}
+              type="text"
+              className="form-control"
+            />
+          </div>
+
+          <div className="col-md-6">
+            <label className="form-label fw-bold">Price ($)</label>
+            <input
+              ref={txtPrice}
+              defaultValue={infoVole.price}
+              type="number"
+              className="form-control"
+            />
+          </div>
+
+          <div className="col-12">
+            <label className="form-label fw-bold">Description</label>
+            <textarea
+              ref={txtDescription}
+              defaultValue={infoVole.description}
+              rows="3"
+              className="form-control"
+            ></textarea>
+          </div>
+
+          <div className="col-12 text-end mt-3">
+            <button
+              type="button"
+              onClick={handlerAjouter}
+              className="btn btn-primary px-5"
+            >
+              {btn}
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
     </>
   );
 }
