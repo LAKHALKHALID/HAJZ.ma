@@ -4,7 +4,7 @@ import axios from "axios";
 
 const initialState={
   Users:[],
-  rol:"",
+  rol:"admin",
 }
 
 export const getUsers=createAsyncThunk(
@@ -34,7 +34,7 @@ export const deleteUser = createAsyncThunk(
 export const putUser = createAsyncThunk(
   "user/putUser",
   async(user)=>{
-    return await axios.put('http://localhost:8000/cars/'+user.id,user)
+    return await axios.put('http://localhost:8000/users/'+user.id,user)
     .then(res=>res.data)
   }
 )

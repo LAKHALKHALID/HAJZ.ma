@@ -23,7 +23,7 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 list ">
               <li className="nav-item">
-                <Link className="nav-link " aria-current="page" >Home</Link>
+                <Link className="nav-link " aria-current="page" to="/" >Home</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to='/vole' >Vols</Link>
@@ -39,7 +39,7 @@ function Navbar() {
           <Link className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dashboard
           </Link>
-          <ul className="dropdown-menu">
+          <ul className="dropdown-menu mt-2">
             <li><Link className="dropdown-item text-dark" to={'/manageUsers'} >Manage User</Link></li>
             <li><Link className="dropdown-item text-dark" to={"/manageVols"}  >Manage Vols</Link></li>
             <li><Link className="dropdown-item text-dark" to="/manageCars"  >Manage Cars</Link></li>
@@ -55,7 +55,7 @@ function Navbar() {
 
             <div className='d-flex gap-3'>
               <Link to={"/login"} className="btn btn-outline-light">Login</Link>
-              <button type="button" className="btn btn-outline-light">Register</button>
+              <Link to="/register" className="btn btn-outline-light">Register</Link>
             </div>
           
           </div>

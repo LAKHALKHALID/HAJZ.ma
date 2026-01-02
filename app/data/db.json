@@ -3,21 +3,20 @@
     {
       "id": "1",
       "brand": "Toyota",
-      "description": "khalid",
-      "model": "Corolla",
-      "Image": "img3.jpg",
+      "description": "the best car",
+      "model": "s512",
+      "Image": "img9.jpg",
       "pricePerDay": "55",
-      "pickupLocation": "Casablanca Airport"
+      "pickupLocation": "Fes"
     },
     {
       "id": "2",
-      "brand": "Hyundai",
-      "model": "i10",
-      "pricePerDay": 40,
-      "available": true,
-      "image": "img2.jpg",
-      "pickupLocation": "Rabat City Center",
-      "description": "A small and economical car, easy to park and ideal for city use."
+      "brand": "fgfg",
+      "description": "ddfdf",
+      "model": "dfdfqds",
+      "Image": "img1.jpg",
+      "pricePerDay": "50",
+      "pickupLocation": "Ifran"
     },
     {
       "id": "3",
@@ -186,6 +185,20 @@
       "Like": 95,
       "Dislike": 6,
       "id": "04b9"
+    },
+    {
+      "id": "bb57",
+      "Nom_Hotel": "five etoil",
+      "Description": "the best hotel in the world",
+      "Ville": "fes",
+      "Image": [
+        "img14.jpg",
+        "img15.jpg",
+        "img7.jpg"
+      ],
+      "Commentaires": [],
+      "Like": 0,
+      "Dislike": 0
     }
   ],
   "vols": [
@@ -296,7 +309,6 @@
       "description": "Direct flight from Laayoune to Lisbon Portela with free cabin baggage.",
       "id": "0d38"
     }
-    
   ],
   "users": [
     {
@@ -312,6 +324,14 @@
       "firstName": "jamal",
       "lastName": "lakhal",
       "email": "jamal@gmail.com",
+      "password": "123",
+      "rol": "user"
+    },
+    {
+      "id": "3",
+      "firstName": "hosamedddd",
+      "lastName": "hms",
+      "email": "hosam@gmail.com",
       "password": "123",
       "rol": "user"
     }

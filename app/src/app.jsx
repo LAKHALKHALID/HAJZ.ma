@@ -14,6 +14,7 @@ import AjouterVole from './admin/manageVole/component/ajouter';
 import ManageUsers from './admin/manageUsers/manageUsers';
 import AjouterUser from './admin/manageUsers/component/ajouter';
 import Home from './Home/home';
+import Register from './register/register';
 function App() {
   return ( 
     <div className=''>
@@ -25,6 +26,8 @@ function App() {
         <Route path='/vole' element={<Voles/>} />
         <Route path='/cars' element={<ListCars/>} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/register' element={<Register/>} />
+
         <Route path='/manageHotels' element={<ManageHotels/>} />
         <Route path='/ajouterHotel/' >
             <Route index element={<AjouterHotel/>}/>
@@ -38,10 +41,9 @@ function App() {
         </Route>
 
         <Route path='/manageVols' element={<ManageVols/>} />
-        <Route path='/ajouterVole' element={<AjouterVole/>} />
         <Route path='/ajouterVole/' >
-            <Route index element={<AjouterUser/>}/>
-            <Route path=':id' element={<AjouterUser/>}  />
+            <Route index element={<AjouterVole/>}/>
+            <Route path=':id' element={<AjouterVole/>}  />
         </Route>
 
         <Route path='/manageUsers' element={<ManageUsers/>} />
